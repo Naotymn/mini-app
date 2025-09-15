@@ -21,9 +21,6 @@ mini-app/
 │── music.json # Données simulées pour la partie musique
 │── README.md # Documentation du projet
 
-yaml
-Copier le code
-
 ---
 
 ## 🛠️ Comment lancer l’application
@@ -32,13 +29,12 @@ Copier le code
    ```bash
    git clone https://github.com/Naotymn/mini-app
    cd mini-app
+   
 Démarrer un serveur local
 Avec Python par exemple :
-
-
 py -m http.server 5500
-Puis ouvrir http://localhost:5500/index.html
 
+Puis ouvrir http://localhost:5500/index.html                     
 (On peut aussi utiliser Node.js http-server ou l’extension VS Code Live Server)
 
 Configurer NewsAPI:
@@ -48,21 +44,28 @@ Configurer NewsAPI:
   2. Récupérez votre clé API  
   3. Remplacez la valeur dans `script.js` à l’endroit prévu.
 
+
 ✨ Aperçu
+
 L’application affiche :
 
 Une section Actualités avec des cartes pour chaque article (titre + description + lien).
+
 Une section Musique avec une liste de morceaux issus du fichier JSON local.
+
 Le tout est responsive et reste lisible sur mobile.
 
-👩‍💻 Technologies utilisées
+👩‍💻 Technologies utilisées:
+
 HTML5 / CSS3 pour la structure et le design
 JavaScript pour la logique et les appels API
 Git + GitHub pour le versionnement et le partage du projet
 
-📌 Remarques
+📌 Remarques: 
+
 J’ai utilisé un proxy CORS pour pouvoir interroger NewsAPI depuis le navigateur.
 Pour une mise en production, il faudrait gérer ces appels via un petit backend pour plus de fiabilité.
 
-✍️ Auteur
+✍️ Auteur:
+
 Projet réalisé par Naomy dans le cadre d’un test technique.
