@@ -35,40 +35,33 @@ Copier le code
 Démarrer un serveur local
 Avec Python par exemple :
 
-bash
-Copier le code
+
 py -m http.server 5500
 Puis ouvrir http://localhost:5500/index.html
 
 (On peut aussi utiliser Node.js http-server ou l’extension VS Code Live Server)
 
-Configurer NewsAPI
-
-Créer un compte gratuit sur https://newsapi.org
-
-Récupérer sa clé API
-
-La coller dans script.js à l’endroit prévu.
+Configurer NewsAPI:
+- J’ai déjà intégré ma clé API dans `script.js` pour ce rendu.  
+- Si vous souhaitez tester avec votre propre clé :  
+  1. Créez un compte gratuit sur [https://newsapi.org](https://newsapi.org)  
+  2. Récupérez votre clé API  
+  3. Remplacez la valeur dans `script.js` à l’endroit prévu.
 
 ✨ Aperçu
 L’application affiche :
 
 Une section Actualités avec des cartes pour chaque article (titre + description + lien).
-
 Une section Musique avec une liste de morceaux issus du fichier JSON local.
-
 Le tout est responsive et reste lisible sur mobile.
 
 👩‍💻 Technologies utilisées
 HTML5 / CSS3 pour la structure et le design
-
-JavaScript Vanilla pour la logique et les appels API
-
+JavaScript pour la logique et les appels API
 Git + GitHub pour le versionnement et le partage du projet
 
 📌 Remarques
 J’ai utilisé un proxy CORS pour pouvoir interroger NewsAPI depuis le navigateur.
-
 Pour une mise en production, il faudrait gérer ces appels via un petit backend pour plus de fiabilité.
 
 ✍️ Auteur
