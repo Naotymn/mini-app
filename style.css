@@ -1,0 +1,156 @@
+/* Reset rapide */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fond + texte */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #2f3640;
+  line-height: 1.6;
+  padding-top: 70px; 
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffffd9;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #273c75;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2f3640;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+nav a:hover,
+nav a.active {
+  background: #273c75;
+  color: #fff;
+}
+
+/* Contenu */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+h1 {
+   display: block;           
+  text-align: center;       
+  margin: 0 auto 20px;      
+  border-left: 0;           
+  padding-left: 0;          
+  color: #192a56;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #273c75;
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+h2 {
+   font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #192a56;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+
+#news-data, #music-data {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Carte stylée */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #273c75;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.card a {
+  display: inline-block;
+  background: #273c75;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.card a:hover {
+  background: #40739e;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul { gap: 10px; }
+  h2 { font-size: 1.3rem; }
+  .card { padding: 16px; }
+}
