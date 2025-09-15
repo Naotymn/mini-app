@@ -30,8 +30,8 @@ Copier le code
 
 1. **Cloner le projet**  
    ```bash
-   git clone https://github.com/TON-PSEUDO/mini-app-news-music.git
-   cd mini-app-news-music
+   git clone https://github.com/Naotymn/mini-app
+   cd mini-app
 Démarrer un serveur local
 Avec Python par exemple :
 
